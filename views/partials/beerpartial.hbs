@@ -1,6 +1,20 @@
-<img src='{{this.image_url}}' alt='beer' width='100px' />
-{{this.name}}
-{{this.description}}
-{{this.tagline}}
 
 
+<div class="card  width: 18rem;">
+  <div class="bg-image hover-overlay ripple w-40" data-mdb-ripple-color="light">
+    <img src="{{this.image_url}}" class="img-fluid" alt="{{this.name}}" />
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    </a>
+  </div>
+ 
+  <div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+     <div class="card-header">{{this.tagline}}</div>
+    <p class="card-text">
+      {{this.description}}
+    </p>
+
+
+  </div>
+</div>
